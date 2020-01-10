@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ChromeDevelopKit Setttings</title>
+  <link rel="stylesheet" href="lib/photon/photon.css">
+  <link rel="stylesheet" href="app/style.css">
+</head>
+
+<body class="options-body">
+  <form id="options-setting">
+    <p>
+      <label for="username">username</label>
+      <input class="form-control" name="username" value="test5@abcft.com" id="username" type="text" />
+    </p>
+    <p>
+      <label for="password">password</label>
+      <input name="password" value="1234qwer" id="password" type="text" />
+    </p>
+    <div class="submit">
+      <button class="btn btn-primary" id="btn" type="button">Save</button>
+    </div>
+  </form>
+  <script>
+    // var form = document.getElementById('options-setting');
+    // var username = document.getElementById('username');
+    // var password = document.getElementById('password');
+    // var btn = document.getElementById('btn');
+
+    // btn.addEventListener('click', () => {
+    //   var data = { username: username.value, password: password.value };
+    //   chrome.storage.sync.set(data, function (a, b, c) {
+    //     console.log(a, b, c);
+    //     message('设置已保存');
+    //   });
+    // })
+  </script>
+</body>
+
+</html>

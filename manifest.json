@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "chrome-developkit",
+  "version": "0.0.1",
+  "description": "Developkit for chrome.",
+  "icons": {
+    "16": "images/icon-16.png",
+    "48": "images/icon-48.png",
+    "96": "images/icon-96.png",
+    "128": "images/icon-128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon-19.png",
+      "38": "images/icon-38.png"
+    },
+    "default_title": "chrome-developkit"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.abcfintech.com/*",
+        "*://*.analyst.ai/*"
+      ],
+      "js": [
+        "lib/jquery/jquery.min.js",
+        "scripts/content.js"
+      ]
+    }
+  ]
+}

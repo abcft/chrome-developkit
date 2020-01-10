@@ -1,0 +1,20 @@
+{
+  "name": "@abcft/chrome-developkit",
+  "version": "1.0.0",
+  "description": "Developkit for chrome.",
+  "homepage": "https://github.com/abcft/chrome-developkit",
+  "author": {
+    "name": "afeiship",
+    "email": "1290657123@qq.com"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
