@@ -58,6 +58,13 @@
           </div>
         </div>
       </fieldset>
+      <span class="is-empty" v-if="!items.length">
+        <p>
+          <img width="120" src="https://cdn.segmentfault.com/v-5e154194/global/img/404.svg" />
+        </p>
+        <p>You have none configurations.</p>
+        <button @click="add" class="btn btn-default">Quick add</button>
+      </span>
     </div>
   </main>
   <script src="scripts/options.js"></script>
