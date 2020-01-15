@@ -1,4 +1,27 @@
-.options-body {
-  height: 500px;
-  position: relative;
+html,
+body,
+#app {
+  height: 100%;
+}
+
+#app {
+  min-height: 500px;
+  padding: 10px;
+}
+
+.domain-item {
+  width: 90%;
+  margin: 10px auto 10px;
+}
+.header {
+  height: 80px;
+}
+
+.header .btn {
+  margin-bottom: 10px;
+}
+
+.body {
+  height: calc(100% - 80px);
+  overflow-y: scroll;
 }
