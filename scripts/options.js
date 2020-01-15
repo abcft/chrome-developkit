@@ -13,7 +13,6 @@ new Vue({
   },
   methods: {
     add() {
-      console.log('add!');
       this.items.push({ debug: true, enable: true });
     },
     del(inIndex) {
