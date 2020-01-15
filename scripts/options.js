@@ -5,6 +5,12 @@ new Vue({
       items: []
     };
   },
+  mounted() {
+    chrome.storage.sync.get('chrome-developkit.domains', (e) => {
+      var items = e['chrome-developkit.domains'];
+      this.items = items;
+    });
+  },
   methods: {
     add() {
       this.items.push({ debug: true, enable: true });
