@@ -8,11 +8,12 @@ new Vue({
   mounted() {
     chrome.storage.sync.get('chrome-developkit.domains', (e) => {
       var items = e['chrome-developkit.domains'];
-      this.items = items;
+      this.items = items || [];
     });
   },
   methods: {
     add() {
+      console.log('add!');
       this.items.push({ debug: true, enable: true });
     },
     del(inIndex) {
