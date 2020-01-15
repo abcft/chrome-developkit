@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "build": "mv ../chrome-developkit.* dist"
+    "build": "mv ../chrome-developkit.* dist && rm -rf dist/chrome-developkit.pem"
   },
   "license": "MIT",
   "publishConfig": {
