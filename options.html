@@ -24,19 +24,19 @@
       <fieldset class="domain-item" v-for="(item, index) in items" :key="index">
         <legend>Domain: {{ item.domain }}</legend>
         <label class="row">
-          <div class="col-20">Domain:</div>
+          <div class="col-25">Domain:</div>
           <div class="column">
             <input class="form-control" placeholder="abc.com" v-model="item.domain" />
           </div>
         </label>
         <label class="row">
-          <div class="col-20">Username:</div>
+          <div class="col-25">Username:</div>
           <div class="column">
             <input class="form-control" placeholder="test5@abcft.com" v-model="item.username" />
           </div>
         </label>
         <label class="row">
-          <div class="col-20">Password:</div>
+          <div class="col-25">Password:</div>
           <div class="column">
             <input class="form-control" placeholder="test1234" v-model="item.password" />
           </div>
@@ -52,9 +52,9 @@
           </label>
         </div>
         <div class="row">
-          <div class="col-20">&nbsp;</div>
+          <div class="col-25">&nbsp;</div>
           <div class="column">
-            <button @click="del(index)" class="btn btn-negative btn-large w30 auto">REMOVE</button>
+            <button @click="del(index)" class="btn btn-negative btn-large w100 auto">Remove</button>
           </div>
         </div>
       </fieldset>
