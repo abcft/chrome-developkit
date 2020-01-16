@@ -33,6 +33,7 @@
       ],
       "js": [
         "lib/jquery/jquery.min.js",
+        "lib/next/next-js-core2.js",
         "scripts/content.js"
       ]
     }
