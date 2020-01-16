@@ -27,7 +27,7 @@ $(document).ready(function() {
     var domContext = $('.ab-wp.default-show:visible');
 
     if (isSsoPage) {
-      waitForElementToDisplay('#multimode-login', 1000, () => {
+      waitForElementToDisplay('.new-btn', 1000, () => {
         var inputs = $('input', domContext);
         var btn = $('.new-btn', domContext);
 
